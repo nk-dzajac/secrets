@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-gpg --decrypt "$1"
+gpg --output "${1%.enc}" --decrypt "$1"
